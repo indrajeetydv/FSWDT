@@ -18,7 +18,7 @@ public class TypeConversion{
 
 
 		int i=12345;//4 byte
-		short s=(short)i; // 2 byt
+		short s=(short)i; // 2 byte
 
 	}
 
