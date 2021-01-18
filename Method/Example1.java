@@ -16,9 +16,14 @@ public class Example1{
 
 	public static void main(String[] args){
 		fun1();
-		byte b1=12;
+		/*byte b1=12;
 		byte b2=34;
-		int y=fun2(b1,b2);
+
+
+		int y=fun2(b1,b2);*/
+
+
+		int y=fun2(12,34);
 		
 		System.out.println("Result = "+y);
 
