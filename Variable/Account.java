@@ -1,4 +1,5 @@
 public class Account{
+	//
 	public String firstName;
 	public String lastName;
 	public static int acctNumber;
@@ -6,6 +7,10 @@ public class Account{
 	Account(String firstName,String lastName){
 		this.firstName=firstName;
 		this.lastName=lastName;
+	}
+
+	Account(){
+		System.out.println("Non-parametrized");
 	}
 
 	public String getFirstName(){
