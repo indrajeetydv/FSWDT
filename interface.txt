@@ -1,0 +1,15 @@
+Enum: to represent the named constant value like menu items
+====
+class Month{
+	JAN,FEB
+}
+
+enum Month{
+	JAN(10),FEB(16),MARCH(19);
+	
+	//all 8 type members we can define
+}
+
+
+
+
