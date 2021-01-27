@@ -22,7 +22,9 @@ class Years{
 		Months[] months=Months.values();
 
 		for(Months month:months){
-			System.out.print(month.name()+"...");			
+			//System.out.print(month.name()+"...");			
+			//because internally it will call toString methods which will return ename name contanct value
+			System.out.print(month+"...");			
 			System.out.println(month.getNum());
 		}
 	}
