@@ -11,5 +11,10 @@ enum Month{
 }
 
 
-
+public abstract Enum{
+	String name;
+	public String toString(){
+	  return name;
+	}
+}
 

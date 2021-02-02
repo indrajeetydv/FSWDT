@@ -1,0 +1,61 @@
+Thread:
+=====
+2 ways we can create thread.
+
+1) using Thread class: 
+2) using runnable interface: run()
+
+class MyThread extends Thread{
+	run(){}
+	main(){
+	 MyThread mt=new MyThread()
+	  mt.start();
+	}
+}
+
+
+class MyThread implements Runnable{
+	run(){}
+	main(){
+	MyThread mt=new MyThread()
+	 Thread mt=new Thread(mt);
+	
+	  mt.start();
+	}
+}
+
+
+print numbers
+ascending 1 10
+decending 10 1
+
+
+Thread Priority:
+==========
+MIN_PRIORITY : 1
+NORM_PRIORITY: 5
+MAX_PRIORITY: 10
+
+
+setPriority(int)
+getPriority()
+
+setName(String)
+getName()
+
+
+ways to control the threads:
+=================
+sleep(): public static native void sleep(long) throws java.lang.InterruptedException;
+join(): public final synchronized void join(long) throws java.lang.InterruptedException;
+
+synchronized methods:
+synchronized block:
+
+
+ 
+
+
+
+
+

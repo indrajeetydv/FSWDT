@@ -1,0 +1,81 @@
+Inner try and catch block:
+================
+try{
+}catch(Exception e){}
+
+try{
+}finally{
+}
+
+syntax:
+
+try{
+	try{
+           }catch(Exception e){
+           } 
+}catch(Exception e){
+}
+
+
+
+finally block:
+========
+try{
+	connection...
+               statement...
+               resultSet....
+}catch(SqlException exp){
+}finally{
+  connection.closed()
+}
+
+
+syntax:
+try/catch/finally
+try/finally: if we don't want to catch exception but we want to execute some statment definitely.
+
+
+
+throws:
+=====
+1. common method
+2. specific method
+
+Oracle developer will provide common method us.
+like:public static int parseInt(java.lang.String) throws java.lang.NumberFormatException;{
+	
+	throw new java.lang.NumberFormatException();
+}
+
+
+<AM> <M> <data-type> methodname(paramList..) throws  <Exception-name>
+
+throw:
+====
+
+1. class should extend either Exception class or RuntimeException
+
+class <class-name> extends Exception/RuntimeException{
+}
+
+2. we should define premeterized construstor with String param
+
+class <class-name> extends Exception/RuntimeException{
+	<class-name>(String varName){
+	}
+}
+
+3. we should always use super call with paramerized constructor.
+
+class <class-name> extends Exception/RuntimeException{
+	<class-name>(String varName){
+		super(varName);
+	}
+}
+
+
+
+
+
+
+
