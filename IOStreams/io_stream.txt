@@ -1,0 +1,26 @@
+IO Stream: 
+=======
+
+InputStream: interface
+OutputStream: interface
+ 
+FileInputStream and FileOutputStream: is used to read and write data as bytes from file.
+
+DataInputStream and DataOutputStream: is used to read and write data as primitive data.
+
+ObjectInputStream and ObjectOutputStream: is used to read and write data as object.
+
+BufferedInputStream and BufferedOutputStream: is used to read and write data as buffers.
+
+class Human{
+	
+}
+
+
+
+
+
+
+
+
+
