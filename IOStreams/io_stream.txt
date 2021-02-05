@@ -1,8 +1,10 @@
 IO Stream: 
 =======
 
-InputStream: interface
-OutputStream: interface
+Bytes Streams
+==============
+OutputStream: abstract class
+InputStream: abstract class
  
 FileInputStream and FileOutputStream: is used to read and write data as bytes from file.
 
@@ -12,9 +14,40 @@ ObjectInputStream and ObjectOutputStream: is used to read and write data as obje
 
 BufferedInputStream and BufferedOutputStream: is used to read and write data as buffers.
 
-class Human{
-	
-}
+Characters Streams:
+=================
+Writer(abstract class): output stream
+Reader(abstract class): input stream
+
+FileWriter and FileReader: 
+1. are used to read and write data from a file as characters
+2. Using FileReader class we cannot read one line at a time from a file. we can only read character at time, it reduces the reading
+performance of the application.
+
+BufferedWriter and BufferedReader: to improve reading and writing capability of the other input and output stream.
+
+OutputStreamReader and InputStreamReader: 
+
+1. An OutputStreamWriter is a bridge form characters streams to byte streams: characters written to it are encoded into 
+bytes using a specified charset.
+2. An InputStreamReader is a bridge form bytes streams to characters streams: it reads bytes and decodes them into characters 
+using a specified charset.
+
+
+Note: It is recommanded to use FileReader and FileWriter classes to read data from text file
+whereas FileInputStream and FileOutStream classes are only recommanded to use reading and writing image files.
+
+ 
+PrintStream: 
+======== 
+This class is a filter stream class used to write data as it is in the given format. Unlike FileOutputStream, this class writes 97
+as 97 rather than 'a'.
+
+
+
+
+
+
 
 
 
